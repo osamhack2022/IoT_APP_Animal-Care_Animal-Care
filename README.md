@@ -71,9 +71,9 @@ $ yarn start or npm run start
 ## 팀 정보 (Team Information)
 -이효석(lhs30328@gmail.com) Github Id: hyord
 
--이종용() Github Id: koy04721
+-이종용(koy04721@naver.com) Github Id: koy04721
 
--조승현() Github Id: gmelan
+-조승현(gmelan@gnu.ac.kr) Github Id: gmelan
 
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
