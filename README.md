@@ -9,12 +9,12 @@ Animal-Care는 아두이노 & 라즈베리파이와 Web으로 구현한 군견 �
 
 ## Manual
 본 프로젝트는 오픈 소스 프로젝트로 진행되며, 본 프로젝트에 관심이 있는 개발자와 사용자를 위하여 튜토리얼 GitBook을 제공하고 있습니다.
-
+<div align=center><a href="https://animal-care.gitbook.io/animal-care/ "><img src="https://img.shields.io/badge/GITBOOK-PROJECT%20DOC-%23000000?style=for-the-badge&logo=github"/></a></div>
 
 
 ## Contribution
 소통은 실시간 소통이 가능하고 문서화에 유리한 Notion 페이지에서 이루어집니다.
-
+<div align=center><a href="https://humdrum-cushion-c16.notion.site/Animal_Care-0c52fe8bfb66483f91e0114e6e891012"><img src="https://img.shields.io/badge/NOTION-TEAM%20PAGE-brightgreen?style=for-the-badge&logo=notion"/></a></div>
 
 ## License
  * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
