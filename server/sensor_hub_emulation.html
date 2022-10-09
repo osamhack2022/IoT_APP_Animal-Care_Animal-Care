@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Hub</title>
+</head>
+<body>
+    <button id="transfer_data">샘플 데이터 송신(socket)</button>
+    <div id="received_data"></div>
+
+    <script src="../node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script>
+        var io = io();
+        var socket = io.connect("https://iot-app-animal-care-animal-care-rrp7pq4vqwjhp7rv-65535.githubpreview.dev/");
+        var transfer = document.getElementById("transfer_data");
+
+        socket.on("message", (msg) => {
+            let new_p = document.createElement("p");
+            new_p.innerText = msg;
+            document.getElementById("received_data").appendChild(new_p);
+        });
+
+        transfer.onclick = () => {
+            let today = new Date();
+            let example_sensor_id = "sensorhub1"
+            let current_time = ""
+            // yyyymmdd
+            current_time += (today.getFullYear() + ('0' + (today.getMonth() + 1)).slice(-2) + ('0' + today.getDate()).slice(-2))
+            // hhmmss
+            current_time += (('0' + today.getHours()).slice(-2) + ('0' + today.getMinutes()).slice(-2) + ('0' + today.getSeconds()).slice(-2))
+
+            let example_data = example_sensor_id + ',' + current_time + ',' + Math.floor(Math.random()) * 10
+            socket.emit("message", example_data)
+        };
+    </script>
+</body>
+</html>
